@@ -1,0 +1,6 @@
+docling
+python-dotenv
+python-docx
+python-pptx
+openpyxl
+pillow
