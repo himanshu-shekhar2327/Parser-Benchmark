@@ -43,13 +43,23 @@ for md_path in sorted(Path("results").glob("*/invoice*.md")):
           f"{len(got_text)}/{len(want_text):>2}  {len(got_money)}/{len(MONEY):>2}   "
           f"{', '.join(missing) or '-'}")
 
-# Determinism: the same file parsed twice should give an identical hash.
-print("\nDeterminism (same md_sha1 across runs?):")
-hashes = defaultdict(set)
+# Determinism: only SUCCESSFUL runs count. Failed runs have empty output, and
+# mixing them with later successful runs would falsely look non-deterministic.
+runs = defaultdict(list)
 log = Path("results/runs.jsonl")
 if log.exists():
     for line in log.read_text(encoding="utf-8").splitlines():
         rec = json.loads(line)
-        hashes[(rec["parser"], Path(rec["file"]).name)].add(rec["md_sha1"])
-for (p, f), hs in sorted(hashes.items()):
-    print(f"  {p:10}{f:24}{'stable' if len(hs) == 1 else 'DIFFERS'}")
+        if rec.get("error"):
+            continue
+        runs[(rec["parser"], Path(rec["file"]).name)].append(rec["md_sha1"])
+
+print("\nDeterminism (successful runs only):")
+for (p, f), hs in sorted(runs.items()):
+    if len(set(hs)) > 1:
+        verdict = "DIFFERS"
+    elif len(hs) > 1:
+        verdict = "stable"
+    else:
+        verdict = "only 1 run"
+    print(f"  {p:10}{f:24}{verdict:12}(n={len(hs)})")

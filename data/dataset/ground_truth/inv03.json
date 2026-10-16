@@ -1,0 +1,30 @@
+{
+  "invoice_id": "inv03",
+  "supplier_name": "Sample Traders (Pty) Ltd",
+  "supplier_tax_no": "4880932081",
+  "invoice_number": "POS-07135",
+  "invoice_date": "16/10/2026",
+  "lines": [
+    {
+      "description": "Whiteboard markers",
+      "quantity": 7,
+      "unit_price": 2293.97,
+      "line_amount": 16057.79
+    },
+    {
+      "description": "HDMI cable",
+      "quantity": 5,
+      "unit_price": 2115.08,
+      "line_amount": 10575.4
+    },
+    {
+      "description": "Laptop stand",
+      "quantity": 10,
+      "unit_price": 2317.43,
+      "line_amount": 23174.3
+    }
+  ],
+  "subtotal": 49807.49,
+  "vat": 7471.12,
+  "total": 57278.61
+}

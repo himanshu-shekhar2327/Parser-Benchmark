@@ -1,0 +1,48 @@
+{
+  "invoice_id": "inv02",
+  "supplier_name": "Demo Stationers (Pty) Ltd",
+  "supplier_tax_no": "4405576169",
+  "invoice_number": "POS-08266",
+  "invoice_date": "28/10/2026",
+  "lines": [
+    {
+      "description": "Stapler",
+      "quantity": 7,
+      "unit_price": 2499.15,
+      "line_amount": 17494.05
+    },
+    {
+      "description": "Toner cartridge",
+      "quantity": 9,
+      "unit_price": 1603.35,
+      "line_amount": 14430.15
+    },
+    {
+      "description": "Whiteboard markers",
+      "quantity": 12,
+      "unit_price": 867.48,
+      "line_amount": 10409.76
+    },
+    {
+      "description": "Printer paper A4",
+      "quantity": 9,
+      "unit_price": 1356.71,
+      "line_amount": 12210.39
+    },
+    {
+      "description": "Laptop stand",
+      "quantity": 5,
+      "unit_price": 1157.18,
+      "line_amount": 5785.9
+    },
+    {
+      "description": "Filing cabinet",
+      "quantity": 11,
+      "unit_price": 1767.34,
+      "line_amount": 19440.74
+    }
+  ],
+  "subtotal": 79770.99,
+  "vat": 11965.65,
+  "total": 91736.64
+}

@@ -1,0 +1,36 @@
+{
+  "invoice_id": "inv04",
+  "supplier_name": "Sample Traders (Pty) Ltd",
+  "supplier_tax_no": "4887663440",
+  "invoice_number": "INV-2555",
+  "invoice_date": "21/10/2026",
+  "lines": [
+    {
+      "description": "Laptop stand",
+      "quantity": 12,
+      "unit_price": 1155.57,
+      "line_amount": 13866.84
+    },
+    {
+      "description": "Toner cartridge",
+      "quantity": 8,
+      "unit_price": 1793.45,
+      "line_amount": 14347.6
+    },
+    {
+      "description": "Desk lamp",
+      "quantity": 9,
+      "unit_price": 646.24,
+      "line_amount": 5816.16
+    },
+    {
+      "description": "Stapler",
+      "quantity": 7,
+      "unit_price": 1682.64,
+      "line_amount": 11778.48
+    }
+  ],
+  "subtotal": 45809.08,
+  "vat": 6871.36,
+  "total": 52680.44
+}

@@ -1,0 +1,30 @@
+{
+  "invoice_id": "inv01",
+  "supplier_name": "Demo Stationers (Pty) Ltd",
+  "supplier_tax_no": "4797309114",
+  "invoice_number": "INV-7467",
+  "invoice_date": "01/10/2026",
+  "lines": [
+    {
+      "description": "Stapler",
+      "quantity": 4,
+      "unit_price": 2239.65,
+      "line_amount": 8958.6
+    },
+    {
+      "description": "HDMI cable",
+      "quantity": 10,
+      "unit_price": 1402.48,
+      "line_amount": 14024.8
+    },
+    {
+      "description": "Desk lamp",
+      "quantity": 10,
+      "unit_price": 1380.83,
+      "line_amount": 13808.3
+    }
+  ],
+  "subtotal": 36791.7,
+  "vat": 5518.75,
+  "total": 42310.45
+}
